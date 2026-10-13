@@ -12,6 +12,11 @@ export default defineConfig({
   integrations: [auth()],
 
   security: {
-    checkOrigin: false
+    allowedDomains: [
+      {
+        protocol: "https",
+        hostname: "clients.geiss-solene.fr"
+      }
+    ]
   }
 });

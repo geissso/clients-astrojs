@@ -9,5 +9,9 @@ export default defineConfig({
     mode: "standalone"
   }),
 
-  integrations: [auth()]
+  integrations: [auth()],
+
+  security: {
+    checkOrigin: false
+  }
 });
